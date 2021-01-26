@@ -1,0 +1,9 @@
+
+Title: <%=Article.find(@id).title%>
+Content: <%=Article.find(@id).content%>
+
+<form method="post" action="/articles/:id">
+    <input id="hidden" type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete">
+</form>
+
